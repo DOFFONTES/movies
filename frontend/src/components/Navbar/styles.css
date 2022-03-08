@@ -1,0 +1,28 @@
+header {
+    background-color: var(--color-primary);
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.movie-nav-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+}
+.movie-nav-content h1 {
+    margin: 0;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.movie-link {
+    display: flex;
+    align-items: center;
+}
+
+.movie-link-texto {
+    margin: 0 0 0 10px;
+    font-size: 12px;
+}
