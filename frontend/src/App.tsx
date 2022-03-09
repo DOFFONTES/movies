@@ -6,6 +6,7 @@ import {
 import Navbar from "components/Navbar";
 import Lista from "./pages/lista";
 import Formulario from "./pages/formulario";
+import Paginacao from "./components/Paginacao";
 
 function App() {
     return (
