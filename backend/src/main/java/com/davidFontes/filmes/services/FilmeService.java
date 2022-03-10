@@ -20,6 +20,7 @@ public class FilmeService {
 	@Autowired
 	private FilmeRepository repo;
 	
+	@Transactional(readOnly = true)
 	public List<FilmeDTO> buscaTodos(){	
 		List<FilmeDTO> lista = new ArrayList<>();
 		List<Filme> obj = repo.findAll();
@@ -34,6 +35,7 @@ public class FilmeService {
 		return lista;
 	}
 	
+	@Transactional(readOnly = true)
 	public FilmeDTO buscaPorId(Long id) {
 		Filme obj = repo.findById(id).get();
 		FilmeDTO filme = new FilmeDTO(obj);
@@ -41,6 +43,7 @@ public class FilmeService {
 		return filme;
 	}
 	
+	@Transactional
 	public Filme inseri(Filme filme) {
 		return repo.save(filme);
 	}

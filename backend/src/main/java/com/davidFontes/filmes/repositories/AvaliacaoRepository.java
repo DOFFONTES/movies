@@ -7,6 +7,6 @@ import com.davidFontes.filmes.entities.Avaliacao;
 import com.davidFontes.filmes.entities.AvaliacaoPK;
 
 @Repository
-public interface AvaliaçãoRepository extends JpaRepository<Avaliacao, AvaliacaoPK>{
+public interface AvaliacaoRepository extends JpaRepository<Avaliacao, AvaliacaoPK>{
 
 }
