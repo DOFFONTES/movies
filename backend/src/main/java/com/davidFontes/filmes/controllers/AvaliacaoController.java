@@ -10,6 +10,7 @@ import com.davidFontes.filmes.dto.AvaliacaoDTO;
 import com.davidFontes.filmes.dto.FilmeDTO;
 import com.davidFontes.filmes.services.AvaliacaoService;
 
+//@CrossOrigin(origins ="http://localhost:8080/**")
 @RestController
 @RequestMapping(value = "/avaliacoes")
 public class AvaliacaoController {
