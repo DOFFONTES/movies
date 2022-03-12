@@ -1,5 +1,5 @@
 import Paginacao from "components/Paginacao";
-import Cartao from "../../components/Cartao";
+import Cartao from "../../components/cartao";
 
 function Lista() {
     return (
