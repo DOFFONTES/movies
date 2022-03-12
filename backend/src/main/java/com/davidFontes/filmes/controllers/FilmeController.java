@@ -12,7 +12,6 @@ import org.springframework.web.bind.annotation.RestController;
 import com.davidFontes.filmes.dto.FilmeDTO;
 import com.davidFontes.filmes.services.FilmeService;
 
-//@CrossOrigin(origins ="http://localhost:8080/filmes")
 @RestController
 @RequestMapping("/filmes")
 public class FilmeController {
