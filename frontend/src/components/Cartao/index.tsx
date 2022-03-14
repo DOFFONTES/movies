@@ -1,23 +1,20 @@
 import { Link } from "react-router-dom";
 import Avaliacao from "../Avaliacao";
+import {Filme} from "../../types/filme";
 
-function Cartao() {
+type Props = {
+    filme: Filme;
+}
 
-    const movie = {
-        id: 1,
-        image: "https://www.themoviedb.org/t/p/w533_and_h300_bestv2/jBJWaqoSCiARWtfV0GlqHrcdidd.jpg",
-        title: "The Witcher",
-        count: 2,
-        score: 4.5
-    };
+function Cartao( {filme} : Props) {
 
     return (
         <div>
-            <img className="dsmovie-movie-card-image" src={movie.image} alt={movie.title} />
+            <img className="dsmovie-movie-card-image" src={filme.imagem} alt={filme.titulo} />
             <div className="dsmovie-card-bottom-container">
-                <h3>{movie.title}</h3>
+                <h3>{filme.titulo}</h3>
                 <Avaliacao />
-                <Link to={`form/${movie.id}`}>
+                <Link to={`form/${filme.id}`}>
                     <div className="btn btn-primary dsmovie-btn">Avaliar</div>
                 </Link>
 
