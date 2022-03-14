@@ -7,12 +7,12 @@ function Navbar() {
           <nav className='container'>
             <div className='movie-nav-content'>
               <h1>Filmes</h1>
-              <a href='https://github.com/DOFFONTES'></a>
-              <div className='movie-link'>
-               <IconeGithub />
-               <p className='movie-link-texto'>/David Fontes</p>     
-              </div>
-              
+              <a href='https://github.com/DOFFONTES'>
+                  <div className='movie-link'>
+                       <IconeGithub />
+                       <p className='movie-link-texto'>/David Fontes</p>
+                  </div>
+              </a>
             </div>
           </nav>
         </header>
