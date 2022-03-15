@@ -38,9 +38,13 @@ function Lista() {
         });
     },[numeroPagina]);
 
+    const mudaPagina = (novoNumero: number) =>{
+       setNumeroPagina(novoNumero);
+    }
+
     return (
         <>
-            <Paginacao />
+            <Paginacao pagina={pagina} muda={mudaPagina}/>
 
             <div className="container">
                 <div className="row">
