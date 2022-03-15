@@ -1,6 +1,5 @@
 import { ReactComponent as Flecha } from 'assets/img/flecha.svg';
 import './index.css';
-import {useEffect, useState} from "react";
 import {FilmePage} from "../../types/filme";
 
 type Props = {

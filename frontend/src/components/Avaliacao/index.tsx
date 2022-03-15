@@ -2,7 +2,6 @@ import '../Estrela'
 import Estrela from "../Estrela";
 
 import "./styles.css";
-import {useParams} from "react-router-dom";
 
 type Props = {
     avaliacao : number,

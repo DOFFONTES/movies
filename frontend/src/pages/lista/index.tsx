@@ -3,17 +3,9 @@ import Cartao from "../../components/Cartao";
 import axios from "axios";
 import {BASE_URL} from "../../utils/requests";
 import {useEffect, useState} from "react";
-import {Filme, FilmePage} from "../../types/filme";
+import {FilmePage} from "../../types/filme";
 
 function Lista() {
-
-    const filme = {
-        id: 1,
-        imagem: "https://www.themoviedb.org/t/p/w533_and_h300_bestv2/jBJWaqoSCiARWtfV0GlqHrcdidd.jpg",
-        titulo: "The Witcher",
-        contador: 2,
-        avaliacao: 4.5
-    };
 
     const [numeroPagina, setNumeroPagina] = useState(0);
     
