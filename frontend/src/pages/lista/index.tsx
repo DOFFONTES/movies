@@ -30,7 +30,7 @@ function Lista() {
     });
 
     useEffect(() =>{
-        axios.get(`${BASE_URL}/filmes?size=12&page=${numeroPagina}&sort=titulo`).then(response => {
+        axios.get(`${BASE_URL}/filmes?size=12&page=${numeroPagina}&sort=id`).then(response => {
 
             const dado = response.data as FilmePage;
             setPagina(dado);

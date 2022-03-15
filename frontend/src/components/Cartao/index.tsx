@@ -13,7 +13,7 @@ function Cartao( {filme} : Props) {
             <img className="dsmovie-movie-card-image" src={filme.imagem} alt={filme.titulo} />
             <div className="dsmovie-card-bottom-container">
                 <h3>{filme.titulo}</h3>
-                <Avaliacao />
+                <Avaliacao avaliacao={filme.avaliacao} quant={filme.contador} />
                 <Link to={`form/${filme.id}`}>
                     <div className="btn btn-primary dsmovie-btn">Avaliar</div>
                 </Link>
